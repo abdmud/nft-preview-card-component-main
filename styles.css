@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+body {
+    background-color: #0d192b;
+}
+
+.card {
+    border: #14253d solid;
+    width: 340px;
+    border-radius: 1%;
+    background-color: #14253d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0 0 37%;
+}
+
+.card-content {
+    width: 300px;
+}
+
+.container-image {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    max-width: 18.75rem;
+    height: auto;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 5%;
+}
+  
+.main-image {
+    background-image: url("./images/image-equilibrium.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    min-height: 18.75rem;
+    width: 100%;
+}
+  
+.icon-image {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-height: 18.75rem;
+    height: auto;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -8px;
+}
+
+hr {
+    border: #8bacda solid 1px;
+}
+
+.author {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 3%;
+}
+
+.author p {
+    margin-left: 20px;
+    color: #8bacda;
+}
+
+.author span {
+    color: white;
+}
+
+.avatar {
+    margin-top: 2%;
+    width: 30px;
+    height: 30px;
+    border: white solid;
+    border-radius: 50%;
+}
+
+.title {
+    color: white;
+}
+
+.description {
+    color: #8bacda;
+}
+
+.price {
+    color: #00fff7;
+    font-size: 18px;
+}
+
+.duration {
+    color: #8bacda;
+    font-size: 20px;
+}
+
+.price .svg {
+    height: 20px;
+    width: 14px;
+}
+
+.duration .svg {
+    height: 25px;
+    width: 25px;
+}
+
+/** Active States **/
+h1:hover,
+.author-name:hover {
+    color: #00fff7;
+    cursor: pointer;
+}
+
+.icon-image:hover {
+    background-image: url("./images/icon-view.svg");
+    background-color: #00fff7;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 20% 20%;
+    opacity: 0.5;
+    transition: background-color ease-in-out 0.3s;
+}
+
+/** Mobile **/
+@media screen and (max-width: 375px) {
+    body {
+        margin-left: -50%;
+    }
+
+}
